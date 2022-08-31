@@ -43,7 +43,14 @@ class PersonListViewController: UITableViewController {
         return cell
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailsVC = segue.destination as? DetailsViewController else { return }
+        guard let index = tableView.indexPathForSelectedRow else { return }
+        let person = personsList[index.row]
+        detailsVC.personText = person.fullName
+        detailsVC.emailText = person.email
+        detailsVC.phoneText = person.phoneNumber
+    }
     
     
     /*

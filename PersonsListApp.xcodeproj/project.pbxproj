@@ -15,6 +15,7 @@
 		A65E655F28BE80D8004F07E2 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E655E28BE80D8004F07E2 /* PersonListViewController.swift */; };
 		A65E656128BE811F004F07E2 /* PersonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E656028BE811F004F07E2 /* PersonsModel.swift */; };
 		A65E656328BE835E004F07E2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E656228BE835E004F07E2 /* DataManager.swift */; };
+		A65E656528BFCCE2004F07E2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E656428BFCCE1004F07E2 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A65E655E28BE80D8004F07E2 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		A65E656028BE811F004F07E2 /* PersonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsModel.swift; sourceTree = "<group>"; };
 		A65E656228BE835E004F07E2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A65E656428BFCCE1004F07E2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A65E656228BE835E004F07E2 /* DataManager.swift */,
 				A65E655D28BE7EDE004F07E2 /* Service */,
 				A65E655E28BE80D8004F07E2 /* PersonListViewController.swift */,
+				A65E656428BFCCE1004F07E2 /* DetailsViewController.swift */,
 				A65E654F28BE7EBA004F07E2 /* Main.storyboard */,
 				A65E655228BE7EBB004F07E2 /* Assets.xcassets */,
 				A65E655428BE7EBB004F07E2 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				A65E654A28BE7EBA004F07E2 /* AppDelegate.swift in Sources */,
 				A65E655F28BE80D8004F07E2 /* PersonListViewController.swift in Sources */,
 				A65E654C28BE7EBA004F07E2 /* SceneDelegate.swift in Sources */,
+				A65E656528BFCCE2004F07E2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
