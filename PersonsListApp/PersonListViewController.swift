@@ -9,7 +9,7 @@ import UIKit
 
 class PersonListViewController: UITableViewController {
 
-    private var personsList = Person.getPersonList()
+    var comePersonList: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +21,14 @@ class PersonListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        personsList.count
+        comePersonList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personName", for: indexPath)
 
-        let contact = personsList[indexPath.row]
+        let contact = comePersonList[indexPath.row]
         var content = cell.defaultContentConfiguration()
         
         content.text = contact.fullName
@@ -45,10 +45,11 @@ class PersonListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailsVC = segue.destination as? DetailsViewController else { return }
         guard let index = tableView.indexPathForSelectedRow else { return }
-        let person = personsList[index.row]
+        let person = comePersonList[index.row]
         detailsVC.personText = person.fullName
         detailsVC.emailText = person.email
         detailsVC.phoneText = person.phoneNumber
     }
     
 }
+

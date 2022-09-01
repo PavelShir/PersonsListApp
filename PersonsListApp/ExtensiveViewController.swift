@@ -9,7 +9,7 @@ import UIKit
 
 class ExtensiveViewController: UITableViewController {
 
-    private var contactsList = Person.getPersonList()
+    var contactsList: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
