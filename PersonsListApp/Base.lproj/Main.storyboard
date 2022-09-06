@@ -11,7 +11,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="0Fp-xj-6xN">
             <objects>
-                <tabBarController id="b3t-gv-ZSl" customClass="TabBarViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController hidesBottomBarWhenPushed="YES" id="b3t-gv-ZSl" customClass="TabBarViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QcB-8e-ZOI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
 
     private var personsList = Person.getPersonList()
     
@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         
     }
     
-    func dataTransfer() {
+    private func dataTransfer() {
         
         guard let viewControllers = viewControllers else { return }
         

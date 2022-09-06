@@ -10,10 +10,10 @@ import UIKit
 
 struct Person {
     
-    var name: String
-    var surname: String
-    var phoneNumber: String
-    var email: String
+    let name: String
+    let surname: String
+    let phoneNumber: String
+    let email: String
     
     var fullName: String {
         "\(name) \(surname)"
@@ -27,6 +27,7 @@ extension Person {
         
         var persons = [Person]()
         let data = DataManager()
+        
         let namesShuffled = data.names.shuffled()
         let surnameShuffled = data.surnames.shuffled()
         let phonesShuffled = data.phoneNambers.shuffled()
@@ -34,8 +35,11 @@ extension Person {
         
         for index in 0..<data.names.count {
         
-            persons.append(Person(name: namesShuffled[index], surname: surnameShuffled[index], phoneNumber: phonesShuffled[index], email: emailsShuffled[index]))
-            
+            persons.append(Person(
+                name: namesShuffled[index],
+                surname: surnameShuffled[index],
+                phoneNumber: phonesShuffled[index],
+                email: emailsShuffled[index]))
         }
      return persons
     }
